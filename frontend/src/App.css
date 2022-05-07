@@ -1,0 +1,65 @@
+.App {
+  font-family: monospace;
+  text-align: center;
+}
+
+.form-control:focus {
+  border-color: #f3717e;
+  box-shadow: 0px 1px 1px #f3717e inset, 0px 0px 8px #f3717e;
+}
+
+#loginForm,
+#signupForm {
+  margin-top: 50px;
+  padding: 28px;
+  border: 2px solid #dc3545;
+  border-radius: 16px;
+}
+
+.nav-link:enabled {
+  color: #dc3545;
+}
+
+h2 {
+  margin-bottom: 24px;
+}
+
+#home {
+  padding: 28px;
+  color: #dc3545;
+}
+
+#blog {
+  margin-top: 24px;
+  width: 500px;
+  height: 300px;
+  overflow: auto;
+  border: 2px solid #dc3545;
+  border-radius: 16px;
+}
+
+#bloglist {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-self: flex-start;
+}
+
+#addblog {
+  margin-top: 50px;
+  padding: 28px;
+  border: 2px solid #dc3545;
+  border-radius: 16px;
+}
+
+#navbar {
+  border-radius: 7px;
+}
+
+@media (max-width: 500px) {
+  #blog {
+    width: 300px;
+    height: 200px;
+  }
+}
