@@ -24,6 +24,6 @@ app.use("/users", usersRoute);
 const PORT = process.env.PORT || 4000;
 
 mongoose
-  .connect(process.env.DATABASE_URL, { useNewUrlParser: true })
+  .connect("mongodb://localhost/mydb", { useNewUrlParser: true })
   .then(app.listen(PORT, () => console.log("Connected to the database")))
   .catch((err) => console.log(err));
